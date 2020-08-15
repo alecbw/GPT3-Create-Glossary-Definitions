@@ -1,6 +1,6 @@
 # GPT3-Create-Glossary-Definitions
 
-A wrapper with interactive CLI that provides light prompt programming to enable creating definitions of words for a glossar
+A wrapper with interactive CLI that provides light prompt programming to enable creating definitions of words for a glossary
 
 
 

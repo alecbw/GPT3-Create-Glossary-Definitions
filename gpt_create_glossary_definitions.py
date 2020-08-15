@@ -69,7 +69,6 @@ if __name__ == "__main__":
     print(f"Length of input CSV is: {len(input_lod)}")
 
     temperature = prompt_user_response('temperature')
-    # training_samples = prompt_user_response('training_samples')
 
     gpt = GPT(engine="davinci",
           temperature=float(temperature),
@@ -81,6 +80,8 @@ if __name__ == "__main__":
     if example_option not in ["No", "no", "N", "n", "False", False]:
         gpt = add_glossary_examples(gpt)
     else:
+        training_samples = prompt_user_response('training_samples')
+
         # We pick random rows to manually tag as examples
         random_row_numbers = random.sample(range(0, len(input_lod)), int(training_samples))
         for n in random_row_numbers:

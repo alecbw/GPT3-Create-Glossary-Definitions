@@ -56,6 +56,7 @@ def add_glossary_examples(gpt):
 
     return gpt
 
+
 if __name__ == "__main__":
     GPT_KEY = os.getenv("GPT_KEY") if os.getenv("GPT_KEY") else prompt_user_response('GPT')
     set_openai_key(GPT_KEY)
